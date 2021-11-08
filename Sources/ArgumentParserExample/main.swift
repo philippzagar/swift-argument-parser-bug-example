@@ -12,7 +12,7 @@ struct ExampleCommand: ParsableCommand {
     @Option(help: "Not recognized argument")
     var secondArg: String
     
-    @Argument(parsing: .unconditionalRemaining, help:"Failure causing argument, especially the `unconditionalRemaining` option")
+    @Argument(parsing: .unconditionalRemaining, help: "Failure causing argument, especially the `unconditionalRemaining` option")
     var thirdArg: [String]
     
     func run() throws {
